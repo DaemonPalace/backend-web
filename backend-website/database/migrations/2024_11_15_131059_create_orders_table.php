@@ -19,9 +19,6 @@ return new class extends Migration
             $table->integer('ccn');
             $table->string('exp');
             $table->integer('cvv');
-            $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products');
-            $table->integer('quantity');
             $table->string('total');
             $table->timestamps();
         });
